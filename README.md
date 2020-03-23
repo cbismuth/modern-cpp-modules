@@ -1,5 +1,7 @@
 # Puzzles
 
+![CI](https://github.com/cbismuth/puzzles/workflows/CI/badge.svg)
+
 Puzzles written in C/C++.
 
 ## Build
