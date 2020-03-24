@@ -1,4 +1,4 @@
-project(app)
+project(puzzles)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
