@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-# Install prerequisites
-sudo apt-get -y install build-essential cmake git
+# Install prerequisites on Debian / Ubuntu systems
+if [[ -f /etc/lsb-release ]]; then
+  sudo apt-get -y install build-essential cmake git
+fi
 
 # Install Google Test dependency
 DIR_VENDOR_GTEST="vendor/google/googletest"
