@@ -8,4 +8,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 enable_testing()
 
 add_subdirectory(libs)
+add_subdirectory(tests)
 add_subdirectory(app)
