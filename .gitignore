@@ -1,5 +1,8 @@
 # macOS
 .DS_Store
 
+# Vendor
+vendor/
+
 # Build
-build/
+cmake-build-debug/
