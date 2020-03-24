@@ -1,9 +1,7 @@
-#include <iostream>
+#include "gtest/gtest.h"
 
-#include "dummy.h"
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
 
-int main(const int argc, const char **argv) {
-    std::cout << "Running tests ..." << "\n";
-
-    return 42 == sum(40, 2) ? 0 : 1;
+    return RUN_ALL_TESTS();
 }

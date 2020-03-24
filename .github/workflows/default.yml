@@ -7,13 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: sudo apt-get install -y build-essential cmake
-    - name: Clean
-      run: make clean
-    - name: Compile
-      run: make compile
-    - name: Test
-      run: make test
-    - name: Run
-      run: make run
+    - name: build
+      run: ./build.sh
