@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# JetBrains CLion
+.idea/workspace.xml
+
 # Vendor
 vendors/
 

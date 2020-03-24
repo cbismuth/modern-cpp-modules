@@ -1,4 +1,4 @@
-project(libpuzzles_dummy)
+project(puzzles_libdummy)
 
 add_library(${PROJECT_NAME} STATIC dummy.cpp)
 
