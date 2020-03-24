@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+
+!codeStyles/
+!codeStyles/*.xml
+
+!inspectionProfiles/
+!inspectionProfiles/*.xml
