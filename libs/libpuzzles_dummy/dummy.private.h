@@ -1,3 +1,3 @@
 #pragma once
 
-int sum_inner(int first, int second);
+int sumInner(int first, int second);
