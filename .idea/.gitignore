@@ -7,3 +7,6 @@
 
 !inspectionProfiles/
 !inspectionProfiles/*.xml
+
+!scopes/
+!scopes/*.xml
