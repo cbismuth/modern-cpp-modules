@@ -30,4 +30,5 @@ mkdir -p  "${CMAKE_OUTPUT_DEBUG}"
 cd "${CMAKE_OUTPUT_DEBUG}" || exit 1
 cmake ..
 make clean all test
+app/puzzles
 cd - || exit 1
