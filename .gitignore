@@ -2,7 +2,7 @@
 .DS_Store
 
 # Vendor
-vendor/
+vendors/
 
 # Build
 cmake-build-*/

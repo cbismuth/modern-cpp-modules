@@ -6,14 +6,14 @@ if [[ -f /etc/lsb-release ]]; then
 fi
 
 # Install Google Test dependency
-DIR_VENDOR_GTEST="vendor/google/googletest"
+DIR_VENDORS_GTEST="vendors/google/googletest"
 
-if [[ ! -d  "${DIR_VENDOR_GTEST}" ]]; then
-  mkdir -p "${DIR_VENDOR_GTEST}"
-  git clone https://github.com/google/googletest.git "${DIR_VENDOR_GTEST}"
+if [[ ! -d  "${DIR_VENDORS_GTEST}" ]]; then
+  mkdir -p "${DIR_VENDORS_GTEST}"
+  git clone https://github.com/google/googletest.git "${DIR_VENDORS_GTEST}"
 fi
 
-cd "${DIR_VENDOR_GTEST}" || exit 1
+cd "${DIR_VENDORS_GTEST}" || exit 1
 git reset --hard HEAD
 git clean -xfd
 git checkout master
