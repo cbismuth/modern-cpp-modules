@@ -5,7 +5,7 @@
 int main(int argc, char **argv)
 {
   if (argc < 2) {
-    std::cout << argv[0] << " Version " << puzzles_VERSION << std::endl;
+    std::cout << argv[0] << " Version " << PUZZLES_VERSION << std::endl;
   }
 
   return 0;

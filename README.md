@@ -6,11 +6,7 @@ Puzzles written in C/C++.
 
 ## Build
 
-Build project, run tests and execute application as below:
-
-```bash
-make clean all
-```
+To build project execute `build.sh` script.
 
 ## Issues
 

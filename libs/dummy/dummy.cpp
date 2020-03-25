@@ -2,10 +2,10 @@
 
 #include "dummy.private.h"
 
-int sum_inner(const int first, const int second) {
+int sumInner(const int first, const int second) {
   return first + second;
 }
 
 int sum(const int first, const int second) {
-  return sum_inner(first, second);
+  return sumInner(first, second);
 }

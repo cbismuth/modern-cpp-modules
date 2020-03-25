@@ -1,1 +1,1 @@
-add_subdirectory(libpuzzles_dummy)
+add_subdirectory(dummy)

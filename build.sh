@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
 
-# Install prerequisites
-sudo apt-get -y install build-essential cmake git
-
-# Install Google Test dependency
-DIR_VENDOR_GTEST="vendor/google/googletest"
-
-if [[ ! -d  "${DIR_VENDOR_GTEST}" ]]; then
-  mkdir -p "${DIR_VENDOR_GTEST}"
-  git clone https://github.com/google/googletest.git "${DIR_VENDOR_GTEST}"
+# Install prerequisites on Debian / Ubuntu systems
+if [[ -f /etc/lsb-release ]]; then
+  sudo apt-get -y install build-essential cmake git
 fi
 
-cd "${DIR_VENDOR_GTEST}" || exit 1
+# Install Google Test dependency
+DIR_VENDORS_GTEST="vendors/google/googletest"
+
+if [[ ! -d  "${DIR_VENDORS_GTEST}" ]]; then
+  mkdir -p "${DIR_VENDORS_GTEST}"
+  git clone https://github.com/google/googletest.git "${DIR_VENDORS_GTEST}"
+fi
+
+cd "${DIR_VENDORS_GTEST}" || exit 1
 git reset --hard HEAD
 git clean -xfd
 git checkout master
@@ -28,4 +30,5 @@ mkdir -p  "${CMAKE_OUTPUT_DEBUG}"
 cd "${CMAKE_OUTPUT_DEBUG}" || exit 1
 cmake ..
 make clean all test
+app/puzzles
 cd - || exit 1

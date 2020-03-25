@@ -1,6 +1,10 @@
-project(libpuzzles_dummy)
+project(dummy)
 
-add_library(${PROJECT_NAME} STATIC dummy.cpp)
+add_library(${PROJECT_NAME}
+    STATIC
+        dummy.cpp
+        dummy.private.h
+)
 
 add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 

@@ -1,4 +1,4 @@
-project(app)
+project(puzzles)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
@@ -11,5 +11,5 @@ target_include_directories(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
-        libs::libpuzzles_dummy
+        libs::dummy
 )
