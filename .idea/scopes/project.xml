@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="project" pattern="file[puzzles]:*/&amp;&amp;!file[puzzles]:vendors//*" />
+</component>
