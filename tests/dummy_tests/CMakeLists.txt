@@ -1,8 +1,8 @@
 project(dummy_tests)
 
-add_executable(${PROJECT_NAME} main.cpp dummy_test.cpp)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true main.cpp include/*.h src/*.h src/*.cpp)
 
-add_test(NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME})
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
