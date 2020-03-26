@@ -8,10 +8,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 FIND_PROGRAM(CLANG_FORMAT "clang-format")
 IF (CLANG_FORMAT)
     FILE(GLOB_RECURSE
-            CHECK_CXX_SOURCE_FILES
-                app/*.h app/*.cpp
-                libs/*.h libs/*.cpp
-                tests/*.h tests/*.cpp
+        CHECK_CXX_SOURCE_FILES
+            app/*.h app/*.cpp
+            libs/*.h libs/*.cpp
+            tests/*.h tests/*.cpp
     )
     ADD_CUSTOM_TARGET(format
         COMMAND
