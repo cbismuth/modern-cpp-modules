@@ -22,4 +22,5 @@ Written by [Christophe Bismuth](https://www.linkedin.com/in/cbismuth/), licensed
 
 ## References
 
-[Modern CMake Template](https://github.com/rvarago/modern-cmake-template) by [Rafael Varago](https://github.com/rvarago).
+* [Modern CMake Template](https://github.com/rvarago/modern-cmake-template) by [Rafael Varago](https://github.com/rvarago)
+* [C++ project setup with CMake & unit tests (google test)](https://raymii.org/s/tutorials/Cpp_project_setup_with_cmake_and_unit_tests.html) by [Remy van Elst](https://raymii.org/s/static/About.html)
