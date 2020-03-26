@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="cmake" pattern="(file[puzzles]:*/CMakeLists.txt||file:CMakeLists.txt)&amp;&amp;!file[puzzles]:vendors//*" />
+</component>

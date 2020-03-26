@@ -1,3 +1,3 @@
 <component name="DependencyValidationManager">
-  <scope name="sources" pattern="file:CMakeLists.txt||file[puzzles]:app//*||file[puzzles]:libs//*||file[puzzles]:tests//*" />
+  <scope name="sources" pattern="(file[puzzles]:*/*.h||file[puzzles]:*/*.cpp)&amp;&amp;!file[puzzles]:vendors//*" />
 </component>

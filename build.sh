@@ -2,7 +2,7 @@
 
 # Install prerequisites on Debian / Ubuntu systems
 if [[ -f /etc/lsb-release ]]; then
-  sudo apt-get -y install build-essential cmake git
+  sudo apt-get -y install build-essential cmake clang-format git
 fi
 
 # Install Google Test dependency
@@ -15,7 +15,7 @@ fi
 
 cd "${DIR_VENDORS_GTEST}" || exit 1
 git reset --hard HEAD
-git clean -xfd
+git clean -xffd
 git checkout master
 git pull
 git -c advice.detachedHead=false checkout release-1.10.0
@@ -29,6 +29,6 @@ mkdir -p  "${CMAKE_OUTPUT_DEBUG}"
 
 cd "${CMAKE_OUTPUT_DEBUG}" || exit 1
 cmake ..
-make clean all test
+make clean format all test
 app/puzzles
 cd - || exit 1

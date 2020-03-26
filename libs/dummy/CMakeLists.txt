@@ -1,10 +1,8 @@
 project(dummy)
 
-add_library(${PROJECT_NAME}
-    STATIC
-        dummy.cpp
-        dummy.private.h
-)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true main.cpp include/*.h src/*.h src/*.cpp)
+
+add_library(${PROJECT_NAME} ${SOURCES})
 
 add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 
