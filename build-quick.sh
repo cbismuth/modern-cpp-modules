@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+clear -x
+
 # Build project
 CMAKE_OUTPUT_DEBUG="cmake-build-debug"
 

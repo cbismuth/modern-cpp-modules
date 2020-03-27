@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+clear -x
+
 # Install prerequisites on Debian / Ubuntu systems
 if [[ -f /etc/lsb-release ]]; then
   sudo apt-get -y install build-essential cmake clang-format git
