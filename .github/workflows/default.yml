@@ -11,3 +11,5 @@ jobs:
       run: sudo apt install -y lcov
     - name: Build project
       run: ./build.sh
+    - name: Upload code coverage reports
+      run: bash <(curl -s https://codecov.io/bash)
