@@ -7,5 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: prerequisites
+      run: sudo apt install -y lcov
     - name: build
       run: ./build.sh
