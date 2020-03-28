@@ -2,18 +2,6 @@
 
 set -euo pipefail
 
-# Install prerequisites on Debian based systems only
-if [[ -f /etc/lsb-release ]]; then
-  sudo apt-get update
-  sudo apt-get -y upgrade
-  sudo apt-get -y dist-upgrade
-  sudo apt-get -y autoremove --purge
-  sudo apt-get -y autoclean
-  sudo apt-get -y clean
-  sudo apt-get install -f
-  sudo apt-get -y install ca-certificates build-essential git cmake make clang clang-format gcc g++ lcov
-fi
-
 # Set Google Test dependency path
 DIR_VENDORS_GTEST="vendors/google/googletest"
 

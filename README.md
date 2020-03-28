@@ -4,6 +4,18 @@
 
 This repository contains puzzles written in the C/C++ programming language.
 
+## Dependencies
+
+Required dependencies to build and run this project are:
+
+* ca-certificates
+* git
+* cmake
+* make
+* clang-format
+* g++
+* lcov
+
 ## Build
 
 This project uses the CMake build system without advanced configuration and a convenience [build.sh](build.sh) script is available.
