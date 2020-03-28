@@ -5,7 +5,7 @@
 
 This repository contains puzzles written in the C/C++ programming language.
 
-## Dependencies
+## Prerequisites
 
 Required dependencies to build and run this project are:
 
