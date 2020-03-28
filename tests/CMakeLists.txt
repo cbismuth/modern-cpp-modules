@@ -1,2 +1,1 @@
-add_subdirectory(dummy_tests)
-add_subdirectory(learncpp_tests)
+add_subdirectory(core_tests)

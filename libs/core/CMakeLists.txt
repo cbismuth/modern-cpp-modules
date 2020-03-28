@@ -1,4 +1,4 @@
-project(dummy)
+project(core)
 
 file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true main.cpp include/*.h src/*.h src/*.cpp)
 
