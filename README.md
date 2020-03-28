@@ -19,11 +19,10 @@ Required dependencies to build and run this project are:
 
 ## Build
 
-This project uses the CMake build system without advanced configuration and a convenience [build.sh](build.sh) script is available.
+This project uses the CMake build system as well as a convenience [build.sh](build.sh) script.
 
-This script executes `clang-format` to format C/C++ source files according to this [.clang-format](.clang-format) configuration file.
-
-Debug build step generates code coverage reports at `cmake-build-debug/coverage/index.html`.
+This build script also executes `clang-format` to format C/C++ source files according to this [.clang-format](.clang-format) configuration file,
+and debug build step generates code coverage reports uploaded to [codecov.io](https://codecov.io/gh/cbismuth/puzzles).
 
 ## Issues
 
