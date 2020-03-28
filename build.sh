@@ -5,7 +5,7 @@ set -euo pipefail
 # Install prerequisites on Debian based systems only
 if [[ -f /etc/lsb-release ]]; then
   sudo apt-get update
-  sudo apt-get -y install --no-install-recommends ca-certificates git cmake make gcc g++ llvm clang-format lcov
+  sudo apt-get -y install ca-certificates git cmake make clang-format gcc g++ lcov
 fi
 
 # Set Google Test dependency path
