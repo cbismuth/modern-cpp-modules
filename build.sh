@@ -2,9 +2,6 @@
 
 set -euo pipefail
 
-# Clear terminal screen
-clear -x
-
 # Install prerequisites on Debian based systems only
 if [[ -f /etc/lsb-release ]]; then
   sudo apt-get update
