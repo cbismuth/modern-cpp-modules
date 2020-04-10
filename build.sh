@@ -8,17 +8,8 @@ DIR_VENDORS_GTEST="vendors/google/googletest"
 # Clone Google Test repository if not exists
 if [[ ! -d  "${DIR_VENDORS_GTEST}" ]]; then
   mkdir -p "${DIR_VENDORS_GTEST}"
-  git clone https://github.com/google/googletest.git "${DIR_VENDORS_GTEST}"
+  git -c advice.detachedHead=false clone --branch release-1.10.0 --depth 1 https://github.com/google/googletest.git "${DIR_VENDORS_GTEST}"
 fi
-
-# Clean Google Test working copy and checkout tag
-cd "${DIR_VENDORS_GTEST}" || exit 1
-git reset --hard HEAD
-git clean -xffd
-git checkout master
-git pull
-git -c advice.detachedHead=false checkout release-1.10.0
-cd - || exit 1
 
 # Set project debug output path
 CMAKE_OUTPUT_DEBUG="cmake-build-debug"
