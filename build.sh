@@ -25,8 +25,12 @@ cd "${CMAKE_OUTPUT_DEBUG}" || exit 1
 cmake -DCMAKE_BUILD_TYPE=Debug -DCODE_COVERAGE=ON ..
 cmake --build . --config Debug -- -j "$(nproc)"
 
-# Run tests
-ctest -j "$(nproc)" --output-on-failure
+# Run tests with memory checks when Valgrind is available
+if [[ -x "$(command -v valgrind >/dev/null 2>&1)" ]]; then
+  ctest -j "$(nproc)" --output-on-failure --force-new-ctest-process --test-action memcheck
+else
+  ctest -j "$(nproc)" --output-on-failure
+fi
 
 # Run application
 app/puzzles
