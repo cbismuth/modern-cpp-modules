@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install prerequisites
-      run: sudo apt install -y lcov
+      run: sudo apt install -y valgrind lcov
     - name: Build project
       run: ./build.sh
     - name: Upload code coverage reports
