@@ -9,4 +9,4 @@ COPY . /src
 
 WORKDIR /src
 
-RUN ./build.sh
+RUN scripts/build.sh
