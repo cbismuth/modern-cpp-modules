@@ -2,14 +2,8 @@
 
 set -euo pipefail
 
-# Set Google Test dependency path
-DIR_VENDORS_GTEST="vendors/google/googletest"
-
-# Clone Google Test repository if not exists
-if [[ ! -d  "${DIR_VENDORS_GTEST}" ]]; then
-  mkdir -p "${DIR_VENDORS_GTEST}"
-  git -c advice.detachedHead=false clone --branch release-1.10.0 --depth 1 https://github.com/google/googletest.git "${DIR_VENDORS_GTEST}"
-fi
+# Install vendors
+./scripts/vendors.sh
 
 # Set project debug output path
 CMAKE_OUTPUT_DEBUG="cmake-build-debug"
@@ -25,8 +19,8 @@ cd "${CMAKE_OUTPUT_DEBUG}" || exit 1
 cmake -DCMAKE_BUILD_TYPE=Debug -DCODE_COVERAGE=ON ..
 cmake --build . --config Debug -- -j "$(nproc)"
 
-# Run tests
-ctest -j "$(nproc)" --output-on-failure
+# Run tests with memory checks
+ctest -j "$(nproc)" --output-on-failure --force-new-ctest-process --test-action memcheck
 
 # Run application
 app/puzzles

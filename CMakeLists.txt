@@ -35,6 +35,7 @@ if (CODE_COVERAGE AND CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
 endif ()
 
 # Google Test configuration
+include(CTest)
 enable_testing()
 add_subdirectory(vendors/google/googletest)
 
