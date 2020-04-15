@@ -1,13 +1,10 @@
 # macOS
 .DS_Store
 
-# JetBrains CLion project files
-.idea/shelf/
-.idea/workspace.xml
-
 # External dependencies
 vendors/
 
 # CMake output directories
+build/
 cmake-build-debug/
 cmake-build-release/
