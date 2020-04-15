@@ -3,6 +3,7 @@
 
 # JetBrains CLion project files
 .idea/shelf/
+.idea/dictionaries/
 .idea/workspace.xml
 
 # External dependencies
