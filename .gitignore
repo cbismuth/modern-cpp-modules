@@ -9,5 +9,6 @@
 vendors/
 
 # CMake output directories
+build/
 cmake-build-debug/
 cmake-build-release/
