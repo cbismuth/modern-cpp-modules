@@ -1,11 +1,6 @@
 # macOS
 .DS_Store
 
-# JetBrains CLion project files
-.idea/shelf/
-.idea/dictionaries/
-.idea/workspace.xml
-
 # External dependencies
 vendors/
 
