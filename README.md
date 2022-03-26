@@ -23,6 +23,7 @@ A [Dockerfile](Dockerfile) is available as a reproducible build environment.
 ## Build
 
 This project uses the CMake build system as well as a convenience [build.sh](scripts/build.sh) script which additionally:
+
 * executes `clang-format` to format C/C++ source files according to this [clang-format](.clang-format) configuration file,
 * executes Google Test [cases](tests/core_tests) with `valgrind` support to run memory checks,
 * generates code coverage reports and uploads them to [codecov.io](https://codecov.io/gh/cbismuth/puzzles).
