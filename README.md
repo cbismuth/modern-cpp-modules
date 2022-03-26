@@ -1,9 +1,9 @@
 # Puzzles
 
-![CI](https://github.com/cbismuth/puzzles/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/cbismuth/puzzles/branch/master/graph/badge.svg)](https://codecov.io/gh/cbismuth/puzzles)
+![CI](https://github.com/cbismuth/cpp-template/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/cbismuth/cpp-template/branch/master/graph/badge.svg)](https://codecov.io/gh/cbismuth/cpp-template)
 
-This repository contains puzzles written in the C/C++ programming language.
+This repository may contains puzzles written in the C/C++ programming language.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ This project uses the CMake build system as well as a convenience [build.sh](scr
 To build this project from within the Docker image just run: 
 
 ```bash
-docker build -t puzzles/latest .
+docker build -t cpp-template/latest .
 ```
 
 ## Issues

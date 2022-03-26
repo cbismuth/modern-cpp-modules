@@ -1,5 +1,12 @@
-# macOS
+# Apple macOS
 .DS_Store
+
+# Microsoft Visual Studio Code
+.vscode/
+
+# JetBrains AppCode
+*.iml
+.idea/
 
 # External dependencies
 vendors/

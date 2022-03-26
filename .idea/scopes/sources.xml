@@ -1,3 +1,0 @@
-<component name="DependencyValidationManager">
-  <scope name="sources" pattern="(file[puzzles]:*/*.h||file[puzzles]:*/*.cpp)&amp;&amp;!file[puzzles]:vendors//*" />
-</component>
