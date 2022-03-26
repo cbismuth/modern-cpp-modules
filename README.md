@@ -1,6 +1,6 @@
 # Puzzles
 
-![CI](https://github.com/cbismuth/cpp-template/workflows/CI/badge.svg)
+[![CI](https://github.com/cbismuth/cpp-template/workflows/CI/badge.svg)](https://github.com/cbismuth/cpp-template/actions)
 [![codecov](https://codecov.io/gh/cbismuth/cpp-template/branch/master/graph/badge.svg)](https://codecov.io/gh/cbismuth/cpp-template)
 
 This repository may contains puzzles written in the C/C++ programming language.
