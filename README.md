@@ -26,7 +26,7 @@ This project uses the CMake build system as well as a convenience [build.sh](scr
 
 * executes `clang-format` to format C/C++ source files according to this [clang-format](.clang-format) configuration file,
 * executes Google Test [cases](tests/core_tests) with `valgrind` support to run memory checks,
-* generates code coverage reports and uploads them to [codecov.io](https://codecov.io/gh/cbismuth/puzzles).
+* generates code coverage reports and uploads them to [codecov.io](https://app.codecov.io/gh/cbismuth/cpp-template).
 
 To build this project from within the Docker image just run: 
 
