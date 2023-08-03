@@ -1,11 +1,11 @@
 # CMake configuration
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 
 # Project configuration
-project(puzzles-parent VERSION 1.0 LANGUAGES CXX)
+project(HelloTest VERSION 1.0 LANGUAGES CXX)
 
-# C/C++ compiler configuration
-set(CMAKE_CXX_STANDARD 11)
+# Set C++ version
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 

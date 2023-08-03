@@ -1,17 +1,13 @@
 # Apple macOS
 .DS_Store
 
-# Microsoft Visual Studio Code
+# Visual Studio Code
 .vscode/
 
-# JetBrains AppCode
-*.iml
+# JetBrains IntelliJ IDEA
 .idea/
 
-# External dependencies
-vendors/
-
-# CMake output directories
+# Build output
 build/
 cmake-build-debug/
 cmake-build-release/

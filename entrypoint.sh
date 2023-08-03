@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Install vendors
-./scripts/vendors.sh
+./vendors.sh
 
 # Set project debug output path
 CMAKE_OUTPUT_DEBUG="cmake-build-debug"
@@ -23,7 +23,7 @@ cmake --build . --config Debug -- -j "$(nproc)"
 ctest -j "$(nproc)" --output-on-failure --force-new-ctest-process --test-action memcheck
 
 # Run application
-app/puzzles
+app/HelloApp
 
 # Generate coverage reports
 lcov --directory . --capture --output-file coverage.info

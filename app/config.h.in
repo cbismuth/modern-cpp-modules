@@ -1,1 +1,1 @@
-#define PUZZLES_VERSION @puzzles-parent_VERSION@
+#define C_PROJECT_VERSION @HelloTest_VERSION@
