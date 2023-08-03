@@ -1,4 +1,4 @@
-# Modern C++ with CMake modules and Google testing support
+# Modern C++ with CMake modules and GTest support
 
 [![build](https://github.com/cbismuth/modern-cpp-modules/actions/workflows/docker.yml/badge.svg)](https://github.com/cbismuth/modern-cpp-modules/actions/workflows/docker.yml)
 
